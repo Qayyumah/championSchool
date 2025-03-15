@@ -1,0 +1,170 @@
+.line hr{
+    margin: 50px 160px;
+
+    @media(max-width: 1200px){
+        margin: 50px 60px;
+    }
+
+    @media(max-width: 500px){
+           margin: 0px 25px; 
+           margin-top: 80px;
+    }
+}
+.aboutOneDiv{
+    padding: 60px 160px;
+
+    @media(max-width:1200px){
+        padding: 60px 60px;
+    }
+
+    @media(max-width: 500px){
+        padding: 0 20px;
+    }
+}
+
+.learning{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    gap: 85px;
+
+    @media(max-width: 768px){
+        grid-template-columns: repeat(1, 1fr);
+        gap: 0;
+    }
+
+    h2{
+        font-size: 58px;
+        font-weight: 400;
+        line-height: 4.5rem;
+        color: #26262c;
+
+        @media(max-width:1024px){
+            font-size: 50px;
+        }
+
+        @media(max-width: 500px){
+        font-size: 45px;
+        line-height: 3.5rem;
+        }
+    }
+
+    p{
+        line-height: 1.6rem;
+        font-size: 16px;
+        color: #76767f;
+        font-weight: 400;
+    }
+}
+
+.earlyLearning{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    gap: 85px;
+
+    @media(max-width: 768px){
+        grid-template-columns: repeat(1, 1fr);
+        gap: 0;
+    }
+
+    p{
+        color: #76767f;
+        line-height: 1.6rem;
+        font-size: 16px;
+        margin-bottom: 30px;
+
+        @media(max-width: 500px){
+            font-size: 15px;
+            margin-bottom: 15px;
+        }
+    }
+
+    a{
+        cursor: pointer;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 2px;
+        background-color: #00000000;
+        border-style: solid;
+        border-width: 0px 0px 1px 0px;
+        border-color: #DFDFE2;
+        border-radius: 0px 0px 0px 0px;
+        padding: 0px 0px 6px 0px;
+
+        &:hover{
+            border-color: #000;
+            transition: all .8s;
+        }
+    }
+    
+}
+.rightDiv{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.lineIco{
+    margin-top: 100px;
+
+    @media(max-width: 768px){
+        margin-top: 0px;
+    }
+}
+
+.aboutTwoDiv{
+    text-align: center;
+    padding: 8px;
+
+    h4{
+        margin-bottom: 0px;
+        font-size: 22px;
+        font-weight: 500;
+    }
+}
+
+.expertise{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 150px;
+    justify-content: center;
+    margin-top: -40px;
+
+    @media(max-width: 1200px){
+        gap: 70px;
+    }
+
+    @media(max-width: 850px){
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0;
+    }
+
+}
+.numbers{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    p, span{
+        color: #4747d7;
+        font-size: 65px;
+        font-weight: 600;
+
+        @media(max-width: 500px){
+            font-size: 55px;
+        }
+    }
+}
+
+.enrollment,
+.staff,
+.clubs,
+.members{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

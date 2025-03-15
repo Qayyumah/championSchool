@@ -1,0 +1,91 @@
+.Preview{
+    min-width: 30%;
+    min-height: 700px;
+    margin: 0 160px;
+    margin-bottom: -300px;
+
+    @media(max-width: 1200px){
+        min-height: 800px;
+        margin: 0 60px;
+        /* width: 100%    */
+        margin-bottom: -300px;
+    }
+
+    @media(max-width: 768px){
+        margin: 0 0px;
+        min-height: 350px;
+        min-width: 100%;
+        margin-bottom: -300px;
+    }
+}
+.sevSection{
+   padding: 100px 0;
+
+   @media(max-width: 768px){
+    padding: 0px 0;
+   }
+}
+
+.playIco{
+    display: flex;
+    justify-content: center;
+    padding-top: 315px;
+
+    @media(max-width: 768px){
+        padding-top: 150px;
+    }
+}
+
+.infoSec{
+    background-color: #f6f7fd;
+    padding: 0;
+    margin: 0;
+
+
+}
+.offerInfo{
+    
+    padding: 0px 160px;
+    padding-top: 350px;
+    padding-bottom: 100px;
+
+    @media(max-width:1200px){
+        padding: 0px 60px;
+        padding-top: 350px;
+        padding-bottom: 100px;
+    }
+
+    @media(max-width: 768px){
+        padding: 0px 20px;
+        padding-top: 350px;
+        padding-bottom: 80px;
+    }
+
+    p{
+        margin-top: 50px;
+        font-size: 58px;
+        color: #76767f;
+        font-style: italic;
+        line-height: 5rem;
+        margin-bottom: 20px;
+
+        @media(max-width:1024px){
+            font-size: 40px;
+        }
+
+        @media(max-width: 768px){
+            font-size: 20px;
+            line-height: 2rem;
+            margin-top: 30px;
+        }
+    }
+
+    span{
+        margin-top: 10px;
+        font-size: 18px;
+
+        @media(max-width: 768px){
+            font-size: 15px;
+        }
+    }
+}

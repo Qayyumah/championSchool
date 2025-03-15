@@ -1,0 +1,124 @@
+footer{
+    padding-top: 60px;
+
+    span{
+        display: flex;
+        justify-content: center;
+        font-size: 13px;
+        color: #76767f;
+
+        @media(max-width: 376px){
+            font-size: 14px;
+            padding: 0;
+        }
+    }
+}
+.footerContactInfo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 190px;
+    padding: 60px 160px;
+    align-items: center;
+
+    @media(max-width:1200px){
+        gap: 50px;
+        padding: 60px 60px;
+    }
+
+    @media (max-width:900px){
+        flex-direction: column;
+        gap: 0;
+        padding: 60px 0px;
+        text-align: center;
+    }
+}
+
+
+.address,
+.office,
+.attendance{
+
+    h3{
+        font-size: 32px;
+        font-weight: 400;
+
+        @media(max-width: 376px){
+            font-size: 20px;
+        }
+    }
+
+    p{
+        font-size: 16px;
+        color: #76767f;
+    }
+}
+
+.footerDisplay{
+    padding: 0 160px;
+    padding-top: 100px;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 120px;
+
+    @media(max-width: 1200px){
+        gap: 50px;
+        padding: 0 60px;
+        padding-top: 100px;
+        padding-bottom: 50px;
+    }
+
+    @media(max-width: 900px){
+        flex-direction: column;
+        gap: 30px;
+        padding-top: 0px;
+    }
+}
+
+.footerLogo{
+
+    img{
+        width: 250px;
+
+        @media(max-width:1200px){
+            width: 180px;
+        }
+
+        @media(max-width: 768px){
+            width: 250px;
+        }
+    }
+}
+.footerLink{
+
+    @media(max-width: 900px){
+        display: flex;
+        flex-direction: column;
+    }
+}
+.footerLink a{
+    cursor: pointer;
+    margin: 0 15px;
+    color: #000;
+    font-size: 15px;
+    font-weight: 400;
+    text-decoration-line: none;
+
+    @media(max-width: 900px){
+       text-align: center;
+       margin: 5px 0px;
+    }
+}
+
+.footerLink a:hover {
+    color: #2049b8;
+}
+.footerSocials{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    font-weight: bolder;
+}
