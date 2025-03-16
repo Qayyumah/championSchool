@@ -40,8 +40,10 @@ const Contact = () => {
             <h3 style={{ marginTop: '0' }}>updates? Subscribe now!</h3>
           </div>
           <form className={styles.subscribeInfo} onSubmit={handleSubmit(onSubmit)}>
-            <input type="text" placeholder="Email Address" {...register("email")} />
-            {errors.email && <p style={{ color: "red", marginTop:'0', textAlign:'left', marginBottom:'0' }}>{errors.email.message}</p>}
+            <div className={styles.input}>
+              <input type="text" placeholder="Email Address" {...register("email")} />
+              {errors.email && <p style={{ color: "red", marginTop:'0', textAlign:'left', marginBottom:'0' }}>{errors.email.message}</p>}
+            </div>
             
             <button type="submit">Subscribe</button>
           </form>
