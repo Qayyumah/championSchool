@@ -1,6 +1,10 @@
 footer{
     padding-top: 60px;
 
+    @media(max-width:768px){
+        padding: 0;
+    }
+
     span{
         display: flex;
         justify-content: center;
@@ -9,7 +13,7 @@ footer{
 
         @media(max-width: 376px){
             font-size: 14px;
-            padding: 0;
+            padding-top: 0;
         }
     }
 }
@@ -93,7 +97,7 @@ footer{
 }
 .footerLink{
 
-    @media(max-width: 900px){
+    @media(max-width: 500px){
         display: flex;
         flex-direction: column;
     }
@@ -106,7 +110,7 @@ footer{
     font-weight: 400;
     text-decoration-line: none;
 
-    @media(max-width: 900px){
+    @media(max-width: 500px){
        text-align: center;
        margin: 5px 0px;
     }

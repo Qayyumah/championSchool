@@ -16,7 +16,7 @@ const Service = () => {
             }} className={styles.Preview}>
             
                 <div className={styles.playIco}>
-                    <FaPlay size={18} style={{backgroundColor:'#fff', padding:'18px', borderRadius:'50%', color:'#4747d7'}}/>
+                    <FaPlay size={18} style={{backgroundColor:'#fff', padding:'18px', borderRadius:'50%', color:'#4747d7', cursor:'pointer'}}/>
                 </div>
             </div>
 

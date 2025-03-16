@@ -7,9 +7,24 @@ header{
     justify-content: space-evenly;
     padding: 30px 0;
     gap: 50px;
+
+    @media(max-width: 900px){
+        justify-content: space-between;
+        padding: 30px 50px;
+    }
+
+    @media(max-width:500px){
+        padding: 30px 20px;
+    }
 }
 
+.burgernav{
+    display: none;
 
+    @media(max-width:900px){
+        display: flex;
+    }
+}
 
 .headerLink a{
     cursor: pointer;
@@ -19,13 +34,39 @@ header{
     font-weight: bolder;
     text-decoration-line: none;
 
-    @media(max-width:950px){
+    @media(max-width: 900px){
         display: none;
     }
 }
 
+.headerLink2{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding-top: 45px;
+}
+
+.headerLink2 a{
+    cursor: pointer;
+    margin: 0px 0px;
+    color: #000;
+    font-size: 15px;
+    font-weight: bolder;
+    text-decoration-line: none;
+
+    
+}
+
 .headerLink a:hover {
     color: #2049b8;
+}
+.Navsocials{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    font-weight: bolder;
+    padding-top: 30px;
 }
 .socials{
     display: flex;
@@ -34,7 +75,7 @@ header{
     gap: 25px;
     font-weight: bolder;
 
-    @media(max-width: 950px){
+    @media(max-width: 900px){
         display: none;
     }
 }
