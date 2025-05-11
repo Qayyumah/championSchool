@@ -1,0 +1,321 @@
+.admissionHero {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("/images/school-preview.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+}
+
+.admissionHero h1 {
+  font-size: 60px;
+  font-weight: 500;
+
+  @media (max-width: 768px) {
+    font-size: 48px;
+  }
+
+  @media (max-width: 500px) {
+    font-size: 36px;
+  }
+}
+
+.admissionContent {
+  padding: 60px 0;
+}
+
+.admissionIntro {
+  padding: 0 160px 60px;
+  text-align: center;
+
+  @media (max-width: 1200px) {
+    padding: 0 60px 60px;
+  }
+
+  @media (max-width: 768px) {
+    padding: 0 30px 40px;
+  }
+
+  h2 {
+    font-size: 48px;
+    color: #26262c;
+    margin-bottom: 20px;
+
+    @media (max-width: 768px) {
+      font-size: 36px;
+    }
+  }
+
+  p {
+    font-size: 18px;
+    color: #76767f;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+
+    @media (max-width: 768px) {
+      font-size: 16px;
+    }
+  }
+}
+
+.admissionProcess {
+  padding: 60px 160px;
+  background-color: #f6f7fd;
+
+  @media (max-width: 1200px) {
+    padding: 60px 60px;
+  }
+
+  @media (max-width: 768px) {
+    padding: 40px 30px;
+  }
+
+  h2 {
+    font-size: 48px;
+    color: #26262c;
+    margin-bottom: 40px;
+    text-align: center;
+
+    @media (max-width: 768px) {
+      font-size: 36px;
+      margin-bottom: 30px;
+    }
+  }
+}
+
+.processSteps {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.step {
+  display: flex;
+  margin-bottom: 40px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  @media (max-width: 500px) {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+}
+
+.stepNumber {
+  background-color: #29166E;
+  color: white;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  font-weight: bold;
+  flex-shrink: 0;
+  margin-right: 30px;
+
+  @media (max-width: 500px) {
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+}
+
+.stepContent {
+  h3 {
+    font-size: 24px;
+    color: #26262c;
+    margin-bottom: 10px;
+
+    @media (max-width: 768px) {
+      font-size: 20px;
+    }
+  }
+
+  p {
+    font-size: 16px;
+    color: #76767f;
+    line-height: 1.6;
+  }
+}
+
+.requiredDocuments {
+  padding: 60px 160px;
+
+  @media (max-width: 1200px) {
+    padding: 60px 60px;
+  }
+
+  @media (max-width: 768px) {
+    padding: 40px 30px;
+  }
+
+  h2 {
+    font-size: 48px;
+    color: #26262c;
+    margin-bottom: 40px;
+    text-align: center;
+
+    @media (max-width: 768px) {
+      font-size: 36px;
+      margin-bottom: 30px;
+    }
+  }
+}
+
+.documentsList {
+  max-width: 800px;
+  margin: 0 auto;
+  list-style: none;
+  padding: 0;
+
+  li {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    color: #76767f;
+    margin-bottom: 20px;
+
+    @media (max-width: 768px) {
+      font-size: 16px;
+    }
+  }
+}
+
+.checkIcon {
+  color: #29166E;
+  margin-right: 15px;
+  font-size: 20px;
+}
+
+.admissionFAQ {
+  padding: 60px 160px;
+  background-color: #f6f7fd;
+
+  @media (max-width: 1200px) {
+    padding: 60px 60px;
+  }
+
+  @media (max-width: 768px) {
+    padding: 40px 30px;
+  }
+
+  h2 {
+    font-size: 48px;
+    color: #26262c;
+    margin-bottom: 40px;
+    text-align: center;
+
+    @media (max-width: 768px) {
+      font-size: 36px;
+      margin-bottom: 30px;
+    }
+  }
+}
+
+.faqItem {
+  max-width: 800px;
+  margin: 0 auto 30px;
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  h3 {
+    font-size: 20px;
+    color: #29166E;
+    margin-bottom: 15px;
+
+    @media (max-width: 768px) {
+      font-size: 18px;
+    }
+  }
+
+  p {
+    font-size: 16px;
+    color: #76767f;
+    line-height: 1.6;
+  }
+}
+
+.enrollCTA {
+  padding: 80px 160px;
+  text-align: center;
+  background-color: #29166E;
+  color: white;
+
+  @media (max-width: 1200px) {
+    padding: 60px 60px;
+  }
+
+  @media (max-width: 768px) {
+    padding: 40px 30px;
+  }
+
+  h2 {
+    font-size: 48px;
+    margin-bottom: 20px;
+
+    @media (max-width: 768px) {
+      font-size: 36px;
+    }
+  }
+
+  p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+
+    @media (max-width: 768px) {
+      font-size: 16px;
+    }
+  }
+}
+
+.contactButtons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.contactButton {
+  display: inline-block;
+  padding: 15px 40px;
+  background-color: white;
+  color: #29166E;
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+
+  &:hover {
+    background-color: #f0f0f0;
+    transform: translateY(-3px);
+  }
+
+  @media (max-width: 768px) {
+    font-size: 16px;
+    padding: 12px 30px;
+  }
+}

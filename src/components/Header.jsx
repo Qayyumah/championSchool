@@ -1,46 +1,48 @@
-import React, { useState } from "react";
-import styles from "../assets/header.module.css";
-import {
-  AiOutlineInstagram,
-  AiOutlineTwitter,
-  AiOutlineMenu,
-  AiOutlineClose,
-} from "react-icons/ai";
-import { FaFacebookF } from "react-icons/fa";
-import styled from "styled-components";
+"use client"
+
+import { useState } from "react"
+import { Link, useLocation } from "react-router-dom"
+import styles from "../assets/header.module.css"
+import { AiOutlineInstagram, AiOutlineTwitter, AiOutlineMenu, AiOutlineClose } from "react-icons/ai"
+import { FaFacebookF } from "react-icons/fa"
+import styled from "styled-components"
 
 const Header = () => {
-  const [burgerStatus, setBurgerStatus] = useState(false);
+  const [burgerStatus, setBurgerStatus] = useState(false)
+  const location = useLocation()
 
   return (
     <header>
-      <div className={styles.logo}>
-        <img src="/images/logo.svg" />
+      <div>
+        <Link to="/">
+          <img className={styles.logo} src="/images/logo.png" alt="His Favour High School Logo" />
+        </Link>
       </div>
 
       <div className={styles.headerLink}>
-        <a>Home</a>
-        <a>About</a>
-        <a>Academics</a>
-        <a>Activities</a>
-        <a>Contact</a>
+        <Link to="/" className={location.pathname === "/" ? styles.active : ""}>
+          Home
+        </Link>
+        <Link to="/about" className={location.pathname === "/about" ? styles.active : ""}>
+          About
+        </Link>
+        <Link to="/academics" className={location.pathname === "/academics" ? styles.active : ""}>
+          Academics
+        </Link>
+        <Link to="/activities" className={location.pathname === "/activities" ? styles.active : ""}>
+          Activities
+        </Link>
+        <Link to="/admission" className={location.pathname === "/admission" ? styles.active : ""}>
+          Admission
+        </Link>
+        <Link to="/gallery" className={location.pathname === "/gallery" ? styles.active : ""}>
+          Gallery
+        </Link>
+        <Link to="/contact" className={location.pathname === "/contact" ? styles.active : ""}>
+          Contact
+        </Link>
       </div>
 
-      <div className={styles.socials}>
-        <AiOutlineTwitter size={22} color="#2049b8" />
-        <FaFacebookF
-          style={{
-            backgroundColor: "#2049b8",
-            fontSize: "18px",
-            paddingTop: "6px",
-            paddingLeft: "3px",
-            paddingRight: "3px",
-            borderRadius: "50%",
-            color: "white",
-          }}
-        />
-        <AiOutlineInstagram size={22} color="#2049b8" />
-      </div>
 
       <div className={styles.burgernav}>
         <RightMenu>
@@ -52,57 +54,61 @@ const Header = () => {
           </CloseWrapper>
           <div className={styles.headerLink2}>
             <li>
-              <a href="#">Home</a>
+              <Link to="/" onClick={() => setBurgerStatus(false)}>
+                Home
+              </Link>
             </li>
             <li>
-              <a href="#">About</a>
+              <Link to="/about" onClick={() => setBurgerStatus(false)}>
+                About
+              </Link>
             </li>
             <li>
-              <a href="#">Academics</a>
+              <Link to="/academics" onClick={() => setBurgerStatus(false)}>
+                Academics
+              </Link>
             </li>
             <li>
-              <a href="#">Activities</a>
+              <Link to="/activities" onClick={() => setBurgerStatus(false)}>
+                Activities
+              </Link>
             </li>
             <li>
-              <a href="#">Contact</a>
+              <Link to="/admission" onClick={() => setBurgerStatus(false)}>
+                Admission
+              </Link>
+            </li>
+            <li>
+              <Link to="/gallery" onClick={() => setBurgerStatus(false)}>
+                Gallery
+              </Link>
+            </li>
+            <li>
+              <Link to="/contact" onClick={() => setBurgerStatus(false)}>
+                Contact
+              </Link>
             </li>
           </div>
-
-          <NavSocials>
-            <AiOutlineTwitter size={22} color="#2049b8" />
-            <FaFacebookF
-              style={{
-                backgroundColor: "#2049b8",
-                fontSize: "18px",
-                paddingTop: "6px",
-                paddingLeft: "3px",
-                paddingRight: "3px",
-                borderRadius: "50%",
-                color: "white",
-              }}
-            />
-            <AiOutlineInstagram size={22} color="#2049b8" />
-          </NavSocials>
         </BurgerNav>
       </div>
     </header>
-  );
-};
+  )
+}
 
-export default Header;
+export default Header
 
 const RightMenu = styled.div`
   display: flex;
   align-items: center;
-`;
+`
 
 const CustomMenu = styled(AiOutlineMenu)`
   cursor: pointer;
   font-size: 20px;
-  background-color: #2049b8;
+  background-color: #29166E;
   color: white;
   padding: 10px;
-`;
+`
 
 const BurgerNav = styled.div`
   position: fixed;
@@ -116,8 +122,7 @@ const BurgerNav = styled.div`
   transform: ${({ show }) => (show ? "translateX(0%)" : "translateX(100%)")};
   transition: transform 0.3s ease-in-out;
   z-index: 99999999;
-  box-shadow: ${({ show }) =>
-    show ? "0px 0px 15px rgba(0, 0, 0, 0.2)" : "none"}; /* Thicker effect */
+  box-shadow: ${({ show }) => (show ? "0px 0px 15px rgba(0, 0, 0, 0.2)" : "none")}; /* Thicker effect */
 
 
   @media (max-width: 768px) {
@@ -135,7 +140,7 @@ const BurgerNav = styled.div`
       text-decoration: none;
     }
   }
-`;
+`
 
 const CustomClose = styled(AiOutlineClose)`
   cursor: pointer;
@@ -145,17 +150,17 @@ const CustomClose = styled(AiOutlineClose)`
   right: 20px;
   border: 1px dashed black; 
   padding: 8px;
-`;
+`
 
 const CloseWrapper = styled.div`
   display: flex;
   width: 100%;
   justify-content: flex-end;
   padding: 10px;
-`;
+`
 
 const NavSocials = styled.div`
   display: flex;
   gap: 20px;
   margin-top: 30px;
-`;
+`

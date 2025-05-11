@@ -1,97 +1,92 @@
-.contactSection{
-    margin: 60px 160px;
-    text-align: center;
-    width: 78%;
-    min-height: 500px;
-    border-radius: none;
+.contactSection {
+  margin: 60px 160px;
+  text-align: center;
+  width: 78%;
+  min-height: 500px;
+  border-radius: none;
 
-    @media(max-width:1200px){
-        margin: 60px 60px; 
-        width: 88%;  
-    }
+  @media (max-width: 1200px) {
+    margin: 60px 60px;
+    width: 88%;
+  }
 
-
-    @media(max-width: 768px){
-        width: 100%;
-        margin: 0px 0px;
-        margin-top: 60px;
-    }
+  @media (max-width: 768px) {
+    width: 100%;
+    margin: 0px 0px;
+    margin-top: 60px;
+  }
 }
 
-.subBox{
-    padding-top: 100px;
+.subBox {
+  padding-top: 100px;
 
-    @media(max-width: 768px){
-        padding-top: 50px;
-    }
+  @media (max-width: 768px) {
+    padding-top: 50px;
+  }
 }
-.subscribeText{
+.subscribeText {
+  h3 {
+    font-size: 40px;
+    margin-top: 0;
+    color: #fff;
+    font-weight: 500;
 
-    h3{
-        font-size: 40px;
-        margin-top: 0;
-        color: #fff;
-        font-weight: 500;
-
-        @media(max-width: 768px){
-            font-size: 30px;
-        }
-
-        @media(max-width:376px){
-            font-size: 20px;
-        }
+    @media (max-width: 768px) {
+      font-size: 30px;
     }
+
+    @media (max-width: 376px) {
+      font-size: 20px;
+    }
+  }
 }
 
-.subscribeInfo{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 50px;
+.subscribeInfo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 50px;
 
-    @media(max-width: 768px){
-        flex-direction: column;
-        margin: 50px 50px;
-    }
-
-    
-
-    button{
-        cursor: pointer;
-        padding: 0px 55px;
-        height: 50px;
-        margin-top: 0;
-        border-radius: 5px;
-        border: none;
-        color: #2049b8;
-        font-size: 16px;
-        font-weight: 900;
-
-        &:hover{
-            background-color: #e6e6e6;
-        }
-    }
-}
-.input{
-    display: flex;
+  @media (max-width: 768px) {
     flex-direction: column;
+    margin: 50px 50px;
+  }
 
+  button {
+    cursor: pointer;
+    padding: 0px 55px;
+    height: 50px;
+    margin-top: 0;
+    border-radius: 5px;
+    border: none;
+    color: #29166E;
+    font-size: 16px;
+    font-weight: 900;
 
-    input{
-        width: 100%;
-        font-size: 16px;
-        padding: 18px;
-        border-radius: 5px;
-        border: none;
-        margin-bottom: 0;
-
-        @media(max-width: 768px){
-            width: 90%;
-        }
-
-        @media(max-width: 376px){
-            width: 90%;
-            padding: 15px;
-        }
+    &:hover {
+      background-color: #e6e6e6;
     }
+  }
+}
+.input {
+  display: flex;
+  flex-direction: column;
+
+  input {
+    width: 100%;
+    font-size: 16px;
+    padding: 18px;
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 0;
+
+    @media (max-width: 768px) {
+      width: 90%;
+    }
+
+    @media (max-width: 376px) {
+      width: 90%;
+      padding: 15px;
+    }
+  }
 }

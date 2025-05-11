@@ -1,0 +1,232 @@
+.academicsHero {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("/images/com-scie.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+}
+
+.academicsHero h1 {
+  font-size: 60px;
+  font-weight: 500;
+
+  @media (max-width: 768px) {
+    font-size: 48px;
+  }
+
+  @media (max-width: 500px) {
+    font-size: 36px;
+  }
+}
+
+.academicsContent {
+  padding: 60px 0;
+}
+
+.curriculumIntro {
+  padding: 0 160px 60px;
+
+  @media (max-width: 1200px) {
+    padding: 0 60px 60px;
+  }
+
+  @media (max-width: 768px) {
+    padding: 0 30px 40px;
+  }
+
+  h2 {
+    font-size: 48px;
+    color: #26262c;
+    margin-bottom: 20px;
+
+    @media (max-width: 768px) {
+      font-size: 36px;
+    }
+  }
+
+  p {
+    font-size: 18px;
+    color: #76767f;
+    line-height: 1.8;
+    margin-bottom: 20px;
+
+    @media (max-width: 768px) {
+      font-size: 16px;
+    }
+  }
+}
+
+.subjectsDetail {
+  padding: 60px 160px;
+  background-color: #f6f7fd;
+
+  @media (max-width: 1200px) {
+    padding: 60px 60px;
+  }
+
+  @media (max-width: 768px) {
+    padding: 40px 30px;
+  }
+
+  h2 {
+    font-size: 48px;
+    color: #26262c;
+    margin-bottom: 20px;
+
+    @media (max-width: 768px) {
+      font-size: 36px;
+    }
+  }
+}
+
+.subjectCard {
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  margin-top: 30px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+
+  &:hover {
+    transform: translateY(-5px);
+  }
+
+  h3 {
+    font-size: 28px;
+    color: #29166E;
+    margin-bottom: 15px;
+
+    @media (max-width: 768px) {
+      font-size: 24px;
+    }
+  }
+
+  p {
+    font-size: 16px;
+    color: #76767f;
+    line-height: 1.6;
+  }
+}
+
+.facilities {
+  padding: 60px 160px;
+
+  @media (max-width: 1200px) {
+    padding: 60px 60px;
+  }
+
+  @media (max-width: 768px) {
+    padding: 40px 30px;
+  }
+
+  h2 {
+    font-size: 48px;
+    color: #26262c;
+    margin-bottom: 20px;
+
+    @media (max-width: 768px) {
+      font-size: 36px;
+    }
+  }
+}
+
+.facilitiesGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  margin-top: 40px;
+
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.facilityItem {
+  background-color: #f6f7fd;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+
+  &:hover {
+    transform: translateY(-5px);
+  }
+
+  h3 {
+    font-size: 24px;
+    color: #29166E;
+    margin-bottom: 15px;
+
+    @media (max-width: 768px) {
+      font-size: 20px;
+    }
+  }
+
+  p {
+    font-size: 16px;
+    color: #76767f;
+    line-height: 1.6;
+  }
+}
+
+.enrollCTA {
+  padding: 80px 160px;
+  text-align: center;
+  background-color: #29166E;
+  color: white;
+
+  @media (max-width: 1200px) {
+    padding: 60px 60px;
+  }
+
+  @media (max-width: 768px) {
+    padding: 40px 30px;
+  }
+
+  h2 {
+    font-size: 48px;
+    margin-bottom: 20px;
+
+    @media (max-width: 768px) {
+      font-size: 36px;
+    }
+  }
+
+  p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+
+    @media (max-width: 768px) {
+      font-size: 16px;
+    }
+  }
+
+  .enrollButton {
+    display: inline-block;
+    padding: 15px 40px;
+    background-color: white;
+    color: #29166E;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+
+    &:hover {
+      background-color: #f0f0f0;
+      transform: translateY(-3px);
+    }
+
+    @media (max-width: 768px) {
+      font-size: 16px;
+      padding: 12px 30px;
+    }
+  }
+}
